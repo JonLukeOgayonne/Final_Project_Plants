@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="Ogayonne_JonLuke_Plants.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Plant.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
