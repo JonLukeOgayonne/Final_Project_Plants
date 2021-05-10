@@ -23,3 +23,13 @@ public:
 	}
 };
 #endif // End tree definition.
+/*
+
+		// if statement to determine if tree gives fruit.
+		if (isFruit == true) {
+			fruit = isFruit;
+		}
+		else {
+			fruit = isFruit;
+			cout << " This tree does not have fruit." << endl;
+*/
