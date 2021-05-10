@@ -142,6 +142,7 @@
     <ClCompile Include="Ogayonne_JonLuke_Plants.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Flower.h" />
     <ClInclude Include="Plant.h" />
     <ClInclude Include="Tree.h" />
   </ItemGroup>

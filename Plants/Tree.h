@@ -6,30 +6,28 @@ using namespace std;
 // Definition for the class Tree structure.
 class Tree : public Plant {
 private:
-	bool fruit;
+	int fruit;
 public:
 	// Default constructor.
 	Tree() : Plant() {
-		fruit = false;
+		fruit = 0;
 	}
 	// Constructor #2
-	Tree(string identification, int treeHeight, double SpanOfLife, bool isFruit)
+	Tree(string identification, int treeHeight, double SpanOfLife, int isFruit)
 		: Plant(identification, treeHeight, SpanOfLife) {
 		fruit = isFruit;
 	}
 	// Accessor for the tree attribute.
-	bool getFruit() {
+	int getFruit() {
+		// if statement to determine if tree gives fruit.
+		if (fruit == 1) {
+			return fruit;
+		}
+		else {
+			fruit = 0;
+			return fruit;
+		}
 		return fruit;
 	}
 };
 #endif // End tree definition.
-/*
-
-		// if statement to determine if tree gives fruit.
-		if (isFruit == true) {
-			fruit = isFruit;
-		}
-		else {
-			fruit = isFruit;
-			cout << " This tree does not have fruit." << endl;
-*/

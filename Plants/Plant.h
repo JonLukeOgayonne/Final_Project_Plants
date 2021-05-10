@@ -18,15 +18,15 @@ public:
 	// Constructor prototype.
 	Plant(string, int, double);
 	// Accessors for the plant.
-	string displayID() {
+	virtual string displayID() {
 		return ID;
 	}
 
-	int displaySize() {
+	virtual int displaySize() {
 		return size;
 	}
 
-	double displayLife() {
+	virtual double displayLife() {
 		return life;
 	}
 	// Destructor prototype.
@@ -39,8 +39,6 @@ Plant::Plant(string identification, int treeHeight, double SpanOfLife) {
 	life = SpanOfLife;
 }
 // Destructor for the plant.
-Plant::~Plant() {
-	cout << " This is the end of the Plant program." << endl;
-}
+Plant::~Plant() { }
 #endif // End plant definition.
 
